@@ -1,0 +1,154 @@
+/* estilo geral do corpo da pagina */
+body{
+    background-color: rgba(231, 234, 237, 0.868); /*cor do fundo*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /*tipo da funte*/
+    display: flex; /*usando o modelo flecbox para organizar o conteudo*/
+    align-items: center; /*centralizar verticalmente conteudo */
+    height: 100vh; /*altura ocupa 100% da altura da janela do navegador */
+    margin: 0; /*remove a margem padrao do navegador*/
+
+}
+/*estilo da caixa que contém o conteudo principal do jogo */
+.container{
+    text-align: center; /*centraliza o texto dentro da caixa */
+    width: 80%; /* a largura da caixa 80% da largura da tela */
+    max-width: 900px; /* a largura maxima da caixa sera 500px */
+    margin: auto; /* centraliza a caixa horizonalmente */
+
+}
+/* organizando as imagemns */
+#imagem-topo, #palavra-secreta{
+    display: inline-block; /* coloca a imagem e a palavra ao lado dosoutros itens */
+    vertical-align: middle; /* alinha verticalmente no centro */
+    margin: 10px; /* adiciona um pequeno espaço entre os itens */
+}
+/*colocando a imagem na parte superior */
+#imagem-topo{
+    width: 150px; /*largura da imagem do topo */
+    height: auto; /* matem a proporcao da imagem */
+    border-radius: 10px; /* arredondando as bordas  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suavis */
+}
+/* estilo para a are onde a palavra secreta e mostrada */
+#palavra-secreta{
+    font-size: 2em; /* define o tamanho da fonte da palavra secreta (em e uma unidade de medida que significa o dobro da fonte */
+    
+}
+/* estilo da area para o numero de letras */
+#numero-letras{
+    font-size: 1.5em; /* tamanho da fonte parao numero de letras */
+    margin: 10px 0; /* espaço em cima e embaixo */
+    padding: 10px; /* espaço interno ao redor do texto no campo */
+    border: 4px solid #ccc;/* borda cinza clara */
+
+}
+/* estilo da area de mensagens acerto/erro */
+#mendagem{
+    font-size: 1.2em; /* tamanho de fonte moderado paraas mensagens */
+    margin: 20px; /* espaçamento ao redor da area */
+    
+}
+/* estilo para a caixa de entrada de letras */
+input{
+    font-size: 1.2em; /* aumenta o tamanho da fonte na caixa de entrada */
+    padding: 5px; /* adiciona um pequeno equenino espaço dentro da caixa de entrada*/
+    margin-top: 20px; /* adiciona um espaço acima da caixa */
+    display: inline-block; /* coloca a caixa deentrada ao lado dos outros itens */
+
+}
+ /* estilo do botao */
+ button{
+    font-size: 1.2em;  /*  define o tamanho da fonte do botao*/
+    padding: 10px 20px;  /*  adiciona espaçamento dentro do botao*/
+    margin-top: 20px;  /* espaço acima do botao */
+    background-color: rgb(234, 229, 229);  /*  cor do texto do botao*/
+    transition:background-color 0.9s;
+    color: rgb(76, 88, 98);  /* cor do texto do botao */
+    border: none;  /*  remove a borda padrao do botao */
+    cursor: pointer;  /* torna o cursor em uma mao quando passa sobre o botao*/
+    display: inline-block;  /* coloca o botao ao lado dos outros itens */
+
+ }
+ /* efeito quando o usuario passar o mouse sobre o botao */
+button:hover{
+    background-color: rgb(148, 234, 169); /* cor de fundo muda para essa ao passar o mouse */
+}
+/* rstilo para a contagem detentativas restantes*/
+#tentativas-contagem{
+    font-size: 1,5em; /* define o tamanho da fonte da contagem de tentativas */
+    font-weight: bold; /* torna a fonte em negrito */
+    margin-top: 20px; /* adiciona um espaço acima da mensagem */
+
+}
+/* estilo para as imagens de acerto e erro */
+#imagem-acerto, #imagem-erro{
+    width: 150px; /* Define o tamanho das imagens de acerto e erro */
+    height: 150px; /*8 define a altura das imagens */
+    object-fit: cover; /* ajustar a imagem para cobrir a area sem distorçao */
+    margin: 20px auto; /* centraliza as imagens */
+    display: none; /* inicialmente, as imagens nao sao exibidas */
+    border-radius: 50%; /* torna as imagens redondas */
+
+}
+.container{
+    background-color: darkgray;
+    border-radius: 10px;
+    /*cantos arredondados*/
+    padding: 2px;
+    /* adicionar umesoaço interno (padding) ao redor do conteudo */
+    max-width: 400px;
+    /* define a largura maxima do container*/
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0, 0, 10.0);
+    /* adiciona uma sombra bem de leve para destacar o container*/
+
+}
+/* estilo para a linhas com os botoes */
+.buttons{
+    display: flex; /* usando flexbox para os botoes ficarem em linhas */
+    justify-content: center; /* centralizando os botoes na linha */
+    margin-top: 20px; /* espaço acima da linha de botoes */
+    width: 100%; /* garante que os botoes ocupem a largura total da tela */
+
+} 
+/* estilo dos botoes de açao ( chutar e reiniciar ) */
+.buttons button{
+    font-size: 1.2em; /* tamanho da fonte */
+    padding: 10px 20px; /* espaçamento dentro dos botoes */
+    background-color: rgb(219, 127, 255); /* cor do texto */
+    color: rgb(214, 94, 9); /* cor do texto */
+    border: none; /* dsmove a borda */
+    cursor: pointer; /* mao ne pessoal :0 */
+    transition: background-color 0.3s; /* transiçao suave na mudança de cor */
+    margin: 0 10 px; /* espaço entre os botes */
+    
+}
+/* organizar os botoes na hoorizontal, mantendo layout alinhado */
+input,button, .buttons{
+    display: inline-block; /* coloca os elementos em linha */
+    margin-top: 10px; /* margem para espaçamento entre os itens */
+
+}
+
+#palavra{
+    padding: 10px; /* espaço interno ao redor do texto no campo */
+    border: 4px solid #ccc;/* borda cinza clara */
+    padding: 20px; /* adiciona um espaço interno (padding) na pagina */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

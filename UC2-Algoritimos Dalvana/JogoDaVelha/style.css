@@ -1,0 +1,93 @@
+/* * usamos quando queremos aplicar alguma coisa a um todo */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb( burlywood);
+    display: flex;
+    justify-content: center;
+    height: 100vh;/* alturada tela*/
+    color: darkcyan;
+
+}
+
+.container{
+
+    text-align: center;
+    background-color: darkgray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px (0,0,0,0,0.1);
+    width: 300px;
+
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.tabuleiro{
+
+    display: grid; /*nosso display assume um formato para receber nosso joguinho */
+    grid-template-columns: repeat(3, 1fr); /*cria 3 colunas */
+    grid-template-rows: repeat(3, 1fr); /* cria 3 linhas */
+    gap: 10px; /* espaçamento entre as celulas */
+    margin-bottom: 20px;
+
+}
+
+.celula{
+
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+
+}
+
+.celula:hover{
+
+    background-color: powderblue;
+
+}
+
+button{
+
+    padding: 10px;
+    font-size: 16px;
+    background-color: indigo;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:hover{
+
+    background-color: honeydew;
+    
+
+}
+
+
+
+
+
+
+
+
